@@ -1,12 +1,12 @@
 <template>
     <div class="titleBar">
         <div class="title">
-            <img src="../assets/Impress/icons/icon-libreofficeimpress.png" />
-            <span> {{ title_pptx }} — LibreOffice Impress</span>
+            <img src="../assets/Writer/icons/icon-libreofficewriter.png" />
+            <span> {{ title_docx }} — LibreOffice Writer</span>
         </div>
         <div class="buttons">
-            <div class="minimize" id="impressMinimize"><img src="../assets/Impress/icons/icon-minimize.svg" /></div>
-            <div class="restore" id="impressRestore"><img src="../assets/Impress/icons/icon-restore.svg" /></div>
+            <div class="minimize" id="impressMinimize"><img src="../assets/Writer/icons/icon-minimize.svg" /></div>
+            <div class="restore" id="impressRestore"><img src="../assets/Writer/icons/icon-restore.svg" /></div>
             <div class="close" id="impressClose">&times;</div>
         </div>
     </div>
@@ -15,7 +15,7 @@
 <script>
 export default {
     props: {
-        title_pptx: {
+        title_docx: {
             type: String,
             required: true
         }
@@ -90,5 +90,6 @@ export default {
     text-align: center;
     transition: 0.2s;
     cursor: default;
+    margin-bottom: 2px;
 }
 </style>

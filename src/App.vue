@@ -1,5 +1,17 @@
 <script setup>
 import { ref } from 'vue';
+import MenuLibreOfficeWriter from './components/MenuLibreOfficeWriter.vue';
+import FileDropdown from './components/MenuDropdowns/FileDropdown.vue';
+import ModificaDropdown from './components/MenuDropdowns/ModificaDropdown.vue';
+import VisualizzaDropdown from './components/MenuDropdowns/VisualizzaDropdown.vue';
+import InserisciDropdown from './components/MenuDropdowns/InserisciDropdown.vue';
+import FormatoDropdown from './components/MenuDropdowns/FormatoDropdown.vue';
+import FinestraDropdown from './components/MenuDropdowns/FinestraDropdown.vue';
+import AiutoDropdown from './components/MenuDropdowns/AiutoDropdown.vue';
+import MenuIconLibreOfficeWriter from './components/MenuIconLibreOfficeWriter.vue';
+import DocumentiRecentiDropdown from './components/MenuDropdowns/FileDropdowns/DocumentiRecentiDropdown.vue';
+import Diapositive_Schema from './components/MenuLaterale/Diapositive_Schema.vue';
+import TitleBar from './components/TitleBar.vue';
 
 // titolo docx
 const title_docx = ref('Senza Nome 1.docx');
@@ -8,21 +20,17 @@ const updateTitle = (title) => {
   updatePagina(1);
 };
 
-// funzioni e costanti per dinamicizzare attuale dispositiva e il massimo di diapositive per ciascun file
-const diapositivaNumber = ref(1);
-const maxDiapositiva = ref(1);
-const updateDiapositiva = (diapositiva) => {
-  diapositivaNumber.value = diapositiva;
+// funzioni e costanti per dinamicizzare attuale pagina e il massimo di pagine per ciascun file
+const paginaNumber = ref(1);
+const maxPagina = ref(1);
+const updatePagina = (pagina) => {
+  paginaNumber.value = pagina;
 };
-const updateMaxDiapositiva = (max) => {
-  maxDiapositiva.value = max;
+const updateMaxPagina = (max) => {
+  maxPagina.value = max;
 };
 
-// visibilità dei menu laterali alla diapositiva
-const isDiapositiveMenuVisible = ref(true);
-const hideDiapositiveMenu = () => {
-  isDiapositiveMenuVisible.value = !isDiapositiveMenuVisible.value;
-};
+// visibilità dei menu laterali alla pagina
 const isMenuLateraleVisible = ref(true);
 const hideMenuLaterale = () => {
   isMenuLateraleVisible.value = !isMenuLateraleVisible.value;
@@ -58,20 +66,18 @@ const closeSubDropdown = () => {
 </script>
 
 <template>
-  <div class="libreOfficeImpress">
-    <TitleBar :title_docx="title_docx"/>
+  <div class="libreOfficeWriter">
+    <TitleBar :title_docx="title_docx" />
     <div class="menu">
-      <MenuLibreOfficeImpress @toggle-dropdown="toggleDropdown"/>
+      <MenuLibreOfficeWriter @toggle-dropdown="toggleDropdown" />
       <div id="dropdownsWrapper">
         <div id="fileWrapper">
           <FileDropdown @toggle-sub-dropdown="toggleSubDropdown" v-if="showDropdown === 'File'"
             :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
-            <!-- Dropdown di File -->
-            <DocumentiRecentiDropdown v-if="showSubDropdown === 'DocumentiRecenti'"
-              @update-title="updateTitle"
-              @toggle-dropdown="closeDropdown"
-              @toggle-sub-dropdown="closeSubDropdown"
-              :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
+          <!-- Dropdown di File -->
+          <DocumentiRecentiDropdown v-if="showSubDropdown === 'DocumentiRecenti'" @update-title="updateTitle"
+            @toggle-dropdown="closeDropdown" @toggle-sub-dropdown="closeSubDropdown"
+            :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
         </div>
         <ModificaDropdown v-if="showDropdown === 'Modifica'"
           :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
@@ -81,55 +87,49 @@ const closeSubDropdown = () => {
           :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
         <FormatoDropdown v-if="showDropdown === 'Formato'"
           :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
-        <DiapositivaDropdown v-if="showDropdown === 'Diapositiva'"
+        <StiliDropdown v-if="showDropdown === 'Stili'"
           :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
-        <PresentazioneDropdown v-if="showDropdown === 'Presentazione'"
+        <TabellaDropdown v-if="showDropdown === 'Tabella'"
           :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
-        <StrumentiDiapositiva v-if="showDropdown === 'Strumenti'"
+        <FormularioDropdown v-if="showDropdown === 'Formulario'"
+          :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
+        <StrumentiDropdown v-if="showDropdown === 'Formulario'"
           :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
         <FinestraDropdown v-if="showDropdown === 'Finestra'"
           :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
         <AiutoDropdown v-if="showDropdown === 'Aiuto'"
           :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
       </div>
-      <MenuIconLibreOfficeImpress @update-title="updateTitle"/>
+      <MenuIconLibreOfficeWriter @update-title="updateTitle" />
     </div>
-    <div id="mainWrapper">
+    <div id="mainWrapper" style="display:flex; align-items: center;">
 
-      <!-- Menu Diapositive -->
-      <DiapositiveMenu_IVA v-if="isDiapositiveMenuVisible && title_docx === 'IVA.docx'" @update-title="updateTitle" @update-diapositiva="updateDiapositiva" @update-max-diapositiva="updateMaxDiapositiva" />
-      <DiapositiveMenu_IlSistemaSolare v-if="isDiapositiveMenuVisible && title_docx === 'Il Sistema Solare.docx'" @update-title="updateTitle" @update-diapositiva="updateDiapositiva" @update-max-diapositiva="updateMaxDiapositiva" />
-      <DiapositiveMenu_SenzaNome1 v-if="isDiapositiveMenuVisible && title_docx === 'Senza Nome 1.docx'" @update-title="updateTitle" @update-diapositiva="updateDiapositiva" @update-max-diapositiva="updateMaxDiapositiva" />
-      <DiapositiveMenu_SocialMediaMarketing v-if="isDiapositiveMenuVisible && title_docx === 'Social Media Marketing.docx'" @update-title="updateTitle" @update-diapositiva="updateDiapositiva" @update-max-diapositiva="updateMaxDiapositiva" />
-
-      <div style="display:flex; align-items: center;">
-      <Nascondi @click="hideDiapositiveMenu" :style="isDiapositiveMenuVisible ? '' : 'transform: rotate(180deg); margin-right: 121.26px'"/>
-      
-      <!-- View della diapositiva -->
-      <DiapositivaCurrent_IVA v-if="title_docx === 'IVA.docx'" style="max-height: 410px;" :diapositivaNumber="diapositivaNumber" />
-      <DiapositivaCurrent_IlSistemaSolare v-if="title_docx === 'Il Sistema Solare.docx'" style="max-height: 410px;" :diapositivaNumber="diapositivaNumber" />
-      <DiapositivaCurrent_SenzaNome1 v-if="title_docx === 'Senza Nome 1.docx'" style="max-height: 410px;" :diapositivaNumber="diapositivaNumber" />
-      <DiapositivaCurrent_SocialMediaMarketing v-if="title_docx === 'Social Media Marketing.docx'" style="max-height: 410px;" :diapositivaNumber="diapositivaNumber" />
-
-      <Nascondi @click="hideMenuLaterale" :style="isMenuLateraleVisible && isDiapositiveMenuVisible ? 'transform: rotate(180deg)' : isMenuLateraleVisible && !isDiapositiveMenuVisible ? 'transform: rotate(180deg); margin-left: 84.26px' : (isDiapositiveMenuVisible ? 'margin-left: 37px' : 'margin-left: 121.26px')" />
-      </div>
-
-      <!-- Wrapper Menu Laterale DX -->
-      <div class="subMenuLateraleWrapper">
-        <Proprietà style="display: none;" />
-        <Diapositive_Schema style="display: none;" />
-        <MenuLaterale v-if="isMenuLateraleVisible" />
-      </div>
+      <Nascondi @click="hideMenuLaterale"
+        :style="isMenuLateraleVisible && isDiapositiveMenuVisible ? 'transform: rotate(180deg)' : isMenuLateraleVisible && !isDiapositiveMenuVisible ? 'transform: rotate(180deg); margin-left: 84.26px' : (isDiapositiveMenuVisible ? 'margin-left: 37px' : 'margin-left: 121.26px')" />
     </div>
+
+    <!-- Wrapper Menu Laterale DX -->
+    <div class="subMenuLateraleWrapper">
+      <Proprietà style="display: none;" />
+      <Diapositive_Schema style="display: none;" />
+      <MenuLaterale v-if="isMenuLateraleVisible" />
+    </div>
+
     <div class="footer">
-      <p class="numberDiapositiva">Diapositiva {{diapositivaNumber}} di {{maxDiapositiva}}</p>
-      <img src="./assets/Impress/footer.png" />
+      <div class="footer-top">
+        <img src="./assets/Writer/footer/footer1.png"/>
+      </div>
+      <div class="footer-bottom" style="display: flex; align-items: center;">
+        <img src="./assets/Writer/footer/footer2.png"/>
+        <p class="numberPagina">Pagina {{paginaNumber}} di {{maxPagina}}</p>
+        <img src="./assets/Writer/footer/footer3.png"/>
+    </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.libreOfficeImpress {
+.libreOfficeWriter {
   width: 800px;
   height: 560px;
   background-color: #f0f0f0;
@@ -141,7 +141,7 @@ const closeSubDropdown = () => {
   border-bottom: 1px solid #b0b0b0;
 }
 
-.libreOfficeImpress {
+.libreOfficeWriter {
   border: 1px solid black;
 }
 
@@ -157,24 +157,26 @@ hr {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 410px;
+  height: 400px;
+}
+.footer-top {
+  height: 38px;
+}
+
+.footer-bottom {
+  height: 21px;
 }
 
 .footer {
-  display: flex;
-  margin: none;
-  align-items: center;
-  height: 22px;
   border-top: 1px solid #c4c4c4;
 }
 
-.numberDiapositiva {
+.numberPagina {
   margin: none;
-  margin-left: 7px;
-  font-size: 10px;
-  margin-right: 4px;
-  margin-bottom: 9px;
-  width: 87px;
+  margin-left: 5px;
+  font-size: 11px;
+  margin-right: 6px;
+  margin-bottom: 8px;
   cursor: default;
 }
 </style>
