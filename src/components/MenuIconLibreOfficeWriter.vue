@@ -22,12 +22,14 @@
       <button><img src="../assets/Writer/icons/icons_menu/controllo-ortografico.png"></button>
       <button><img src="../assets/Writer/icons/icons_menu/segni-formattazione.png"></button>
       <div class="vl"></div>
-      <button><img src="../assets/Writer/icons/icons_menu/tabella.png"></button>
+      <button style="width: 46.25px;"><img src="../assets/Writer/icons/icons_menu/tabella.png"></button>
       <button><img src="../assets/Writer/icons/icons_menu/immagine.png"></button>
       <button><img src="../assets/Writer/icons/icons_menu/grafico.png"></button>
       <button><img src="../assets/Writer/icons/icons_menu/casella-testo.png"></button>
+      <div class="vl"></div>
       <button class="espandi"><img src="../assets/Writer/icons/icons_menu/espandi.png"></button>
     </div>
+
     <div class="riga2">
       <select>
         <option value="default">Stile del paragrafo predefinito</option>
@@ -42,6 +44,60 @@
         <option value="pre">Testo preformattato</option>
         <option value="more">Altri stili...</option>
       </select>
+      <button><img src="../assets/Writer/icons/icons_menu/aggiorna-stile.png"></button>
+      <button><img src="../assets/Writer/icons/icons_menu/nuovo-stile.png"></button>
+      <div class="vl" style="margin-left: 8px;"></div>
+      <select id="font-select">
+        <option style="font-family: Arial;" value="Arial">Arial</option>
+        <option style="font-family: Verdana;" value="Verdana">Verdana</option>
+        <option style="font-family: Tahoma;" value="Tahoma">Tahoma</option>
+        <option style="font-family: Georgia;" value="Georgia">Georgia</option>
+        <option style="font-family: Times;" value="Times New Roman">Times New Roman</option>
+        <option style="font-family: 'Courier New';" value="Courier New">Courier New</option>
+        <option style="font-family: 'Comic Sans MS';" value="Comic Sans MS">Comic Sans MS</option>
+        <option style="font-family: Impact;" value="Impact">Impact</option>
+        <option style="font-family: 'Trebuchet MS';" value="Trebuchet MS">Trebuchet MS</option>
+        <option style="font-family: Helvetica" value="Helvetica">Helvetica</option>
+      </select>
+      <select id="font-size" style="margin-left">
+        <option value="6">6 pt</option>
+        <option value="7">7 pt</option>
+        <option value="8">8 pt</option>
+        <option value="9">9 pt</option>
+        <option value="10">10 pt</option>
+        <option value="10.5">10,5 pt</option>
+        <option value="11">11 pt</option>
+        <option value="12">12 pt</option>
+        <option value="13">13 pt</option>
+        <option value="14">14 pt</option>
+        <option value="15">15 pt</option>
+        <option value="16">16 pt</option>
+        <option value="18">18 pt</option>
+        <option value="20">20 pt</option>
+        <option value="21">21 pt</option>
+        <option value="22">22 pt</option>
+        <option value="24">24 pt</option>
+        <option value="26">26 pt</option>
+        <option value="28">28 pt</option>
+        <option value="32">32 pt</option>
+        <option value="36">36 pt</option>
+        <option value="40">40 pt</option>
+        <option value="42">42 pt</option>
+        <option value="44">44 pt</option>
+        <option value="48">48 pt</option>
+    </select>
+    <div class="vl"></div>
+    <button><img src="../assets/Writer/icons/icons_menu/grassetto.png"></button>
+    <button><img src="../assets/Writer/icons/icons_menu/italic.png"></button>
+    <button><img src="../assets/Writer/icons/icons_menu/underline.png"></button><button class="dropdown" @mouseover="addHoverClass" @mouseout="removeHoverClass"><img src="../assets/Writer/icons/icons_menu/dropdown-icon.png"></button>
+    <button><img src="../assets/Writer/icons/icons_menu/barrato.png"></button>
+    <div class="vl"></div>
+    <button><img src="../assets/Writer/icons/icons_menu/apice.png"></button>
+    <button><img src="../assets/Writer/icons/icons_menu/pedice.png"></button>
+    <div class="vl"></div>
+    <button><img src="../assets/Writer/icons/icons_menu/cancella-formattazione-diretta.png"></button>
+    <div class="vl"></div>
+    <button class="espandi"><img src="../assets/Writer/icons/icons_menu/espandi.png"></button>
     </div>
   </div>
 </template>
@@ -49,7 +105,7 @@
 <script scoped>
 export default {
   methods: {
-    changePPTX(title) {
+    changeDOCX(title) {
       this.updateTitleAndClose(title);
     },
     updateTitleAndClose(title) {
@@ -72,6 +128,12 @@ export default {
 </script>
 
 <style scoped>
+select {
+  border: 1px solid #ececec;
+  border-bottom: 1px solid #838383;
+  margin-left: 4px;
+}
+
 select > option {
   font-size: 16px;
 }
