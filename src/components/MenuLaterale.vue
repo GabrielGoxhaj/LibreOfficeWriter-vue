@@ -1,14 +1,15 @@
 <template>
     <div class="menuLaterale">
-        <button><img src="../assets/Impress/icons/icons_menu_laterale/impostazioni.png"></button>
-        <button @click="openMenuLaterale('proprietà', $event)"><img src="../assets/Impress/icons/icons_menu_laterale/proprietà.png"></button>
-        <button @click="openMenuLaterale('galleria', $event)"><img src="../assets/Impress/icons/icons_menu_laterale/galleria.png"></button>
-        <button @click="openMenuLaterale('navigatore', $event)"><img src="../assets/Impress/icons/icons_menu_laterale/navigatore.png"></button>
-        <button @click="openMenuLaterale('forme', $event)"><img src="../assets/Impress/icons/icons_menu_laterale/forme.png" ></button>
-        <button @click="openMenuLaterale('cambio-diapositiva', $event)"><img src="../assets/Impress/icons/icons_menu_laterale/cambio-diapositiva.png"></button>
-        <button @click="openMenuLaterale('animazione', $event)"><img src="../assets/Impress/icons/icons_menu_laterale/animazione.png"></button>
-        <button @click="openMenuLaterale('diapositive-schema', $event)"><img src="../assets/Impress/icons/icons_menu_laterale/diapositive-schema.png"></button>
-    </div>
+        <button><img src="../assets/Writer/icons/icons_menu_laterale/impostazioni.png"></button>
+        <button @click="openMenuLaterale('proprietà', $event)"><img src="../assets/Writer/icons/icons_menu_laterale/proprietà.png"></button>
+        <button @click="openMenuLaterale('galleria', $event)"><img src="../assets/Writer/icons/icons_menu_laterale/galleria.png"></button>
+        <button @click="openMenuLaterale('navigatore', $event)"><img src="../assets/Writer/icons/icons_menu_laterale/navigatore.png"></button>
+        <button @click="openMenuLaterale('forme', $event)"><img src="../assets/Writer/icons/icons_menu_laterale/forme.png" ></button>
+        <button @click="openMenuLaterale('pagina', $event)"><img src="../assets/Writer/icons/icons_menu_laterale/pagina.png" ></button>
+        <button @click="openMenuLaterale('ispettore-stili', $event)"><img src="../assets/Writer/icons/icons_menu_laterale/ispettore-stili.png" ></button>
+        <button @click="openMenuLaterale('gestisci-modifiche', $event)"><img src="../assets/Writer/icons/icons_menu_laterale/gestisci-modifiche.png" ></button>
+        <button @click="openMenuLaterale('controllo-accesso', $event)"><img src="../assets/Writer/icons/icons_menu_laterale/controllo-accesso.png" ></button>
+        </div>
 </template>
 
 <script>

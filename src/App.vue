@@ -10,8 +10,9 @@ import FinestraDropdown from './components/MenuDropdowns/FinestraDropdown.vue';
 import AiutoDropdown from './components/MenuDropdowns/AiutoDropdown.vue';
 import MenuIconLibreOfficeWriter from './components/MenuIconLibreOfficeWriter.vue';
 import DocumentiRecentiDropdown from './components/MenuDropdowns/FileDropdowns/DocumentiRecentiDropdown.vue';
-import Diapositive_Schema from './components/MenuLaterale/Diapositive_Schema.vue';
 import TitleBar from './components/TitleBar.vue';
+import Nascondi from './components/Nascondi.vue';
+import MenuLaterale from './components/MenuLaterale.vue';
 
 // titolo docx
 const title_docx = ref('Senza Nome 1.docx');
@@ -34,6 +35,7 @@ const updateMaxPagina = (max) => {
 const isMenuLateraleVisible = ref(true);
 const hideMenuLaterale = () => {
   isMenuLateraleVisible.value = !isMenuLateraleVisible.value;
+  console.log(isMenuLateraleVisible.value)
 };
 const isSubMenuLateraleVisible = ref(false);
 const showSubMenuLaterale = () => {
@@ -102,18 +104,14 @@ const closeSubDropdown = () => {
       </div>
       <MenuIconLibreOfficeWriter @update-title="updateTitle" />
     </div>
-    <div id="mainWrapper" style="display:flex; align-items: center;">
+    <div id="mainWrapper" style="display: flex; align-items: center;">
+      <div>
+        <img id="righello" src="../src/assets/Writer/icons/righello.png">
+      </div>
+          <Nascondi @click="hideMenuLaterale" :style="isMenuLateraleVisible ? 'transform: rotate(180deg)' : 'transform: rotate(0deg)'" />
+          <MenuLaterale v-if="isMenuLateraleVisible" />
+      </div>
 
-      <Nascondi @click="hideMenuLaterale"
-        :style="isMenuLateraleVisible && isDiapositiveMenuVisible ? 'transform: rotate(180deg)' : isMenuLateraleVisible && !isDiapositiveMenuVisible ? 'transform: rotate(180deg); margin-left: 84.26px' : (isDiapositiveMenuVisible ? 'margin-left: 37px' : 'margin-left: 121.26px')" />
-    </div>
-
-    <!-- Wrapper Menu Laterale DX -->
-    <div class="subMenuLateraleWrapper">
-      <Proprietà style="display: none;" />
-      <Diapositive_Schema style="display: none;" />
-      <MenuLaterale v-if="isMenuLateraleVisible" />
-    </div>
 
     <div class="footer">
       <div class="footer-top">
@@ -157,18 +155,17 @@ hr {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 400px;
+  height: 370px;
 }
+
 .footer-top {
+  border-top: 1px solid #c4c4c4;
   height: 38px;
 }
 
 .footer-bottom {
-  height: 21px;
-}
-
-.footer {
   border-top: 1px solid #c4c4c4;
+  height: 21px;
 }
 
 .numberPagina {
@@ -178,5 +175,10 @@ hr {
   margin-right: 6px;
   margin-bottom: 8px;
   cursor: default;
+}
+
+#righello {
+  margin-left: 9px;
+  margin-top: 4px;
 }
 </style>

@@ -85,6 +85,13 @@
         <option value="42">42 pt</option>
         <option value="44">44 pt</option>
         <option value="48">48 pt</option>
+        <option value="54">54 pt</option>
+        <option value="60">60 pt</option>
+        <option value="66">66 pt</option>
+        <option value="72">72 pt</option>
+        <option value="80">80 pt</option>
+        <option value="88">88 pt</option>
+        <option value="96">96 pt</option>
     </select>
     <div class="vl"></div>
     <button><img src="../assets/Writer/icons/icons_menu/grassetto.png"></button>
