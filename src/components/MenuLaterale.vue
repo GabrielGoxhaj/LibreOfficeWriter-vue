@@ -37,7 +37,7 @@ export default {
     display: flex;
     flex-direction: column;
     border-left: 1px solid #b0b0b0;
-    height: 410px;
+    height: 370px;
 }
 
 button {
