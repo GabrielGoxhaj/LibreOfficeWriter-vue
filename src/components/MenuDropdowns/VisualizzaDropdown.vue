@@ -1,38 +1,39 @@
 <template>
   <div id="dropdownVisualizza" class="dropdownVisualizza" :style="style">
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-normale.png">Normale</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-struttura.png">Struttura</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-note.png">Note</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-ordine.png">Ordine diapositive</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-diapositiva-schema.png">Diapositiva schema</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-note-schema.png">Note dello schema</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-stampato.png">Stampato dello schema</div></a>
+    <a><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-normale.png">Normale</div></a>
+    <a><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-web.png">Web</div></a>
     <hr />
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Interfaccia Utente</div></a>
-    <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Barre degli strumenti</div><g>&#x1F782;</g></a>
+    <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Interfaccia Utente</div></a>
+    <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Barre degli strumenti</div><g>&#x1F782;</g></a>
+    <a style="display: flex; justify-content: space-between;"><div><g class="selected check-mark">&#x2713;</g>Barra di stato</div></a>
     <hr />
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Barra di stato</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Pannello diapositive</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Barra a schede delle viste</div></a>
+    <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-righelli.png">Righelli</div><g>&#x1F782;</g></a>
+    <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-barre-scorrimento.png">Barre di scorrimento</div><g>&#x1F782;</g></a>
+    <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-griglia.png">Griglie e linee guida</div><g>&#x1F782;</g></a>
     <hr />
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-righelli.png">Righelli</div></a>
-    <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-griglia.png">Griglia e linee guida</div><g>&#x1F782;</g></a>
-    <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Linee guida</div><g>&#x1F782;</g></a>
+    <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-formattazione.png">Segni di formattazione</div></a>
+    <a style="display: flex; justify-content: space-between;"><div><g class="selected check-mark">&#x2713;</g>Margini del testo</div></a>
+    <a style="display: flex; justify-content: space-between;"><div><g class="selected check-mark">&#x2713;</g>Contorni tabella</div></a>
+    <a style="display: flex; justify-content: space-between;"><div><g class="selected check-mark">&#x2713;</g>Margini sezione</div></a>
+    <a style="display: flex; justify-content: space-between;"><div><g class="selected check-mark">&#x2713;</g>Immagini e grafici</div></a>
+    <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-spazio-vuoto.png">Spazio vuoto</div></a>
     <hr />
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-commenti.png">Commenti</div></a>
-    <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Colore/Toni di grigio</div><g>&#x1F782;</g></a>
+    <a style="display: flex; justify-content: space-between;"><div><g class="selected check-mark">&#x2713;</g>Mostra le revisioni</div></a>
+    <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Commenti</div></a>
+    <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Commenti risolti</div></a>
     <hr />
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-barra.png">Barra laterale</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-layout.png">Layout diapositiva</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-cambio.png">Cambio diapositiva</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-animazione.png">Animazione</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-stili.png">Stili</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-galleria.png">Galleria</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-navigatore.png">Navigatore</div></a>
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Barra dei colori</div></a>
+    <a style="display: flex; justify-content: space-between;"><div><g class="selected check-mark">&#x2713;</g>Sfondo dei campi</div></a>
+    <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Nomi di campo</div></a>
+    <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Campo paragrafi nascosti</div></a>
     <hr />
-    <a><div><img src="../../assets/Impress/icons/icons_dropdown/visualizza/visualizza-sposta.png">Sposta</div></a>
-    <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Zoom</div><g>&#x1F782;</g></a>
+    <a><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-barra.png">Barra laterale</div></a>
+    <a><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-stili.png">Stili</div></a>
+    <a><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-galleria.png">Galleria</div></a>
+    <a><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-navigatore.png">Navigatore</div></a>
+    <a><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-sorgente-dati.png">Sorgenti dati</div></a>
+    <hr />
+    <a><div><img src="../../assets/Writer/icons/icons_dropdown/visualizza/visualizza-schermo-intero.png">Schermo intero</div></a>
+    <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Zoom</div><g>&#x1F782;</g></a>
   </div>
 </template>
 
@@ -87,6 +88,12 @@ export default {
   margin-right: 14px;
   max-width: 16px;
   max-height: 16px;
+}
+
+.dropdownVisualizza a div .check-mark {
+  margin-right: 14px;
+  width: 16px;
+  height: 16px;
 }
 
 .dropdownVisualizza a:hover:not(.disabled) {
