@@ -105,8 +105,9 @@ const closeSubDropdown = () => {
       <MenuIconLibreOfficeWriter @update-title="updateTitle" />
     </div>
     <div id="mainWrapper" style="display: flex; align-items: center;">
-      <div>
+      <div style="overflow-y: scroll;">
         <img id="righello" src="../src/assets/Writer/icons/righello.png">
+        <textarea></textarea>
       </div>
           <Nascondi @click="hideMenuLaterale" :style="isMenuLateraleVisible ? 'transform: rotate(180deg)' : 'transform: rotate(0deg)'" />
           <MenuLaterale v-if="isMenuLateraleVisible" />
@@ -182,5 +183,10 @@ hr {
   margin-top: 4px;
   position: fixed;
   top: 135px;
+}
+
+textarea {
+  display: block;
+  overflow-y: scroll;
 }
 </style>

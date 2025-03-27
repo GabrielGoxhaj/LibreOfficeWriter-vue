@@ -1,28 +1,34 @@
 <template>
     <div id="dropdownModifica" class="dropdownModifica" :style="style">
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/modifica/modifica-annulla.png">Annulla</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/modifica/modifica-ripristina.png">Ripristina</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-annulla.png">Annulla</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-ripristina.png">Ripristina</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-ripeti.png">Ripeti</div></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/modifica/modifica-taglia.png">Taglia</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/modifica/modifica-copia.png">Copia</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/modifica/modifica-incolla.png">Incolla</div></a>
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/modifica/modifica-incolla-speciale.png">Incolla speciale</div><g>&#x1F782;</g></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-taglia.png">Taglia</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-copia.png">Copia</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-incolla.png">Incolla</div></a>
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-incolla-speciale.png">Incolla speciale</div><g>&#x1F782;</g></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/modifica/modifica-duplica.png">Duplica</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/modifica/modifica-seleziona.png">Seleziona tutto</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-seleziona.png">Seleziona tutto</div></a>
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Modo selezione</div><g>&#x1F782;</g></a>
+        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Seleziona testo</div></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/modifica/modifica-trova.png">Trova...</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Trova e sostituisci...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-trova.png">Trova...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-trova-sostituisci.png">Trova e sostituisci...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Vai alla pagina</div></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/modifica/modifica-toggle.png">Toggle Point Edit Mode</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/modifica/modifica-punti.png">Punti di incollaggio</div></a>
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Revisioni</div><g>&#x1F782;</g></a>
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Commento</div><g>&#x1F782;</g></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Collegamento ipertestuale</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Campi...</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Collegamenti esterni...</div></a>
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Oggetto OLE</div><g>&#x1F782;</g></a>
+        <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Collegamento ipertestuale</div></a>
+        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-riferimento.png">Riferimento</div><g>&#x1F782;</g></a>
+        <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Campi...</div></a>
+        <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Collegamenti esterni...</div></a>
+        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Oggetto OLE</div><g>&#x1F782;</g></a>
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-database.png">Scambia database</div></a>
         <hr />
-        <a class="disabled"><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Modo Modifica</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/modifica/modifica-modo-cursore.png">Modo cursore diretto</div></a>
+        <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Modo Modifica</div></a>
     </div>
 </template>
 
