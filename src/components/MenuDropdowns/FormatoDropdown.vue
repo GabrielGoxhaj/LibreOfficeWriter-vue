@@ -1,35 +1,37 @@
 <template>
     <div id="dropdownFormato" class="dropdownFormato" :style="style">
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-testo.png">Testo</div><g>&#x1F782;</g></a>
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-spaziatura.png">Spaziatura</div><g>&#x1F782;</g></a>
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-allinea.png">Allinea testo</div><g>&#x1F782;</g></a>
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-elenchi.png">Elenchi</div><g>&#x1F782;</g></a>
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-testo.png">Testo</div><g>&#x1F782;</g></a>
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-spaziatura.png">Spaziatura</div><g>&#x1F782;</g></a>
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-allinea.png">Allinea testo</div><g>&#x1F782;</g></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Cancella formattazione diretta</div></a>
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Stili</div><g>&#x1F782;</g></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-clona.png">Clona formattazione</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-cancella.png">Cancella formattazione diretta</div></a>
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Evidenzia stili</div><g>&#x1F782;</g></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-carattere.png">Carattere...</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-paragrafo.png">Paragrafo...</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-elenchi-puntati.png">Elenchi puntati e numerati...</div></a>
-        <a class="disabled"><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Tema...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-carattere.png">Carattere...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-paragrafo.png">Paragrafo...</div></a>
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-elenchi.png">Elenchi</div><g>&#x1F782;</g></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-elenchi-puntati.png">Elenchi puntati e numerati...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Tema...</div></a>
         <hr />
-        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-tabella.png">Tabella</div><g>&#x1F782;</g></a>
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-immagine.png">Immagine</div><g>&#x1F782;</g></a>
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-casella.png">Casella di testo e forma</div><g>&#x1F782;</g></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-ombra.png">Ombra</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-stile.png">Stile di pagina...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-sommario.png">Pagina sommario...</div></a>
+        <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Commenti...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-colonne.png">Colonne...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Filigrana...</div></a>
+        <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Sezioni...</div></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-interazione.png">Interazione...</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Nome...</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Alt Text...</div></a>
+        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-immagine.png">Immagine</div><g>&#x1F782;</g></a>
+        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-casella-testo.png">Casella di testo e forma</div><g>&#x1F782;</g></a>
+        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-cornice.png">Cornice e oggetto</div><g>&#x1F782;</g></a>
+        <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Nome...</div></a>
+        <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Alt Text...</div></a>
         <hr />
-        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-distribuisci.png">Distribuisci la selezione</div><g>&#x1F782;</g></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-ruota.png">Ruota</div></a>
-        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-ribalta.png">Ribalta</div><g>&#x1F782;</g></a>
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-converti.png">Converti</div><g>&#x1F782;</g></a>
-        <hr />
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-allinea-oggetti.png">Allinea gli oggetti</div><g>&#x1F782;</g></a>
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-disponi.png">Disponi</div><g>&#x1F782;</g></a>
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Impress/icons/icons_dropdown/formato/formato-raggruppa.png">Raggruppa</div><g>&#x1F782;</g></a>
+        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-ancoraggio.png">Ancoraggio</div><g>&#x1F782;</g></a>
+        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-scorrimento.png">Scorrimento</div><g>&#x1F782;</g></a>
+        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-disponi.png">Disponi</div><g>&#x1F782;</g></a>
+        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-ruota-ribalta.png">Ruota o ribalta</div><g>&#x1F782;</g></a>
+        <a class="disabled" style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/formato/formato-gruppo.png">Gruppo</div><g>&#x1F782;</g></a>
     </div>
 </template>
 
