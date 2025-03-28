@@ -1,9 +1,9 @@
 <template>
     <div id="dropdownFinestra" class="dropdownFinestra" :style="style">
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/finestra/finestra-nuova.png">Nuova finestra</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/finestra/finestra-chiudi.png">Chiudi finestra</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/finestra/finestra-nuova.png">Nuova finestra</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/finestra/finestra-chiudi.png">Chiudi finestra</div></a>
         <hr/>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Senza nome 1 - LibreOffice Impress</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Senza nome 1 - LibreOffice Writer</div></a>
     </div>
 </template>
 

@@ -4,18 +4,29 @@
         <a><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-controllo-auto.png">Controllo ortografico automatico</div></a>
         <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Sinonimi...</div></a>
         <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-lingua.png">Lingua</div><g>&#x1F782;</g></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-conteggio-parole.png">Conteggio parole...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Controllo accesso facilitato...</div></a>
         <hr />
-        <a><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-opzioni-correzione.png">Opzioni di correzione automatica...</div></a>
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-opzioni-correzione.png">Correzione automatica</div><g>&#x1F782;</g></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Testo automatico...</div></a>
+        <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-mappa-immagine-disabled.png">Mappa immagine</div></a> 
         <hr />
         <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Oscura</div></a>
         <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Oscura in automatico</div></a>
         <hr />
-        <a><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-minimizza.png">Minimizza presentazione...</div></a>
-        <a><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-mappa.png">Mappa immagine</div></a>
-        <a><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-sostituzione.png">Sostituzione colore</div></a>
-        <a><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-lettore.png">Lettore multimediale</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-numerazione.png">Numerazione titoli...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Numerazione righe...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Impostazionni delle note a piè di pagina/di chiusura...</div></a>
         <hr />
-        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Formulari</div><g>&#x1F782;</g></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-stampa-serie.png">Stampa guidata in serie...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Database bibliografico</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Sorgente Rubrica...</div></a>
+        <hr />
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-aggiorna.png">Aggiorna</div><g>&#x1F782;</g></a>
+        <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Proteggi documento</div><g>&#x1F782;</g></a>
+        <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Calcola</div></a>
+        <a class="disabled"><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Ordina...</div></a>        
+        <hr />
         <a style="display: flex; justify-content: space-between;"><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-macro.png">Macro</div><g>&#x1F782;</g></a>
         <a><div><img src="../../assets/Writer/icons/icons_dropdown/strumenti/strumenti-strumenti.png">Strumenti per lo sviluppo</div></a>
         <hr />

@@ -1,23 +1,23 @@
 <template>
     <div id="dropdownAiuto" class="dropdownAiuto" :style="style">
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/aiuto/aiuto-guida.png">Guida di LibreOffice</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/aiuto/aiuto-cose.png">Cos'è questo?</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Guide utente</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Mostra suggerimento del giorno</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Cerca comandi</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/aiuto/aiuto-guida.png">Guida di LibreOffice</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/aiuto/aiuto-cose.png">Cos'è questo?</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Guide utente</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Mostra suggerimento del giorno</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Cerca comandi</div></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/aiuto/aiuto-aiuto.png">Ottieni aiuto in linea</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/aiuto/aiuto-invia.png">Invia commenti...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/aiuto/aiuto-aiuto.png">Ottieni aiuto in linea</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/aiuto/aiuto-invia.png">Invia commenti...</div></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Riavvia in modalità provvisoria...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Riavvia in modalità provvisoria...</div></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Partecipa</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/aiuto/aiuto-donazione.png">Donazione a LibreOffice</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Partecipa</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/aiuto/aiuto-donazione.png">Donazione a LibreOffice</div></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Informazioni sulla licenza</div></a>
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/vuoto-16x16.png">Controlla aggiornamenti...</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Informazioni sulla licenza</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/vuoto-16x16.png">Controlla aggiornamenti...</div></a>
         <hr />
-        <a><div><img src="../../assets/Impress/icons/icons_dropdown/aiuto/aiuto-info.png">Informazioni su LibreOffice</div></a>
+        <a><div><img src="../../assets/Writer/icons/icons_dropdown/aiuto/aiuto-info.png">Informazioni su LibreOffice</div></a>
     </div>
 </template>
   
