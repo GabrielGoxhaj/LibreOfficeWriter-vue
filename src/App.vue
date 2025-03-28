@@ -96,7 +96,7 @@ const closeSubDropdown = () => {
           :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
         <FormularioDropdown v-if="showDropdown === 'Formulario'"
           :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
-        <StrumentiDropdown v-if="showDropdown === 'Formulario'"
+        <StrumentiDropdown v-if="showDropdown === 'Strumenti'"
           :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
         <FinestraDropdown v-if="showDropdown === 'Finestra'"
           :style="{ top: dropdownPosition.top + 'px', left: dropdownPosition.left + 'px' }" />
