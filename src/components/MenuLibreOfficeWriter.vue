@@ -32,8 +32,8 @@ export default {
     <button @click="dropdownToggle($event, 'Formato')">
       F<u>o</u>rmato
     </button>
-    <button @click="dropdownToggle($event, 'Diapositiva')">
-      <u>D</u>iapositiva
+    <button @click="dropdownToggle($event, 'Stili')">
+      <u>S</u>tili
     </button>
     <button @click="dropdownToggle($event, 'Presentazione')">
       Pre<u>s</u>entazione

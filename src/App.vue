@@ -13,6 +13,7 @@ import DocumentiRecentiDropdown from './components/MenuDropdowns/FileDropdowns/D
 import TitleBar from './components/TitleBar.vue';
 import Nascondi from './components/Nascondi.vue';
 import MenuLaterale from './components/MenuLaterale.vue';
+import StiliDropdown from './components/MenuDropdowns/StiliDropdown.vue';
 
 // titolo docx
 const title_docx = ref('Senza Nome 1.docx');
